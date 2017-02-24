@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost/web/index.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style></style>
+<title>Alley Signup &amp; Signin Form Responsive Widget Template  :: w3layouts</title>
+<link href="./Alley Signup &amp; Signin Form Responsive Widget Template __ w3layouts_files/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="keywords" content="Alley Signup &amp; Signin Form Tab Form,Login Forms,Sign up Forms,Registration Forms,News letter Forms,Elements" .="">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<script src="./Alley Signup &amp; Signin Form Responsive Widget Template __ w3layouts_files/jquery.min.js.download"></script>
+<script src="./Alley Signup &amp; Signin Form Responsive Widget Template __ w3layouts_files/easyResponsiveTabs.js.download" type="text/javascript"></script>
+				<script type="text/javascript">
+					$(document).ready(function () {
+						$('#horizontalTab').easyResponsiveTabs({
+							type: 'default', //Types: default, vertical, accordion           
+							width: 'auto', //auto or any width like 600px
+							fit: true   // 100% fit in a container
+						});
+					});
+				   </script>
+</head>
+<body>
+	<h1> I.Decipher</h1>
+
+<div class="main-content1">
+<div class="rules">
+<p>--&gt; Rules :                       <br>
+1.Team Size is 2.                        <br>
+2.Only one member can login at a time.        <br>                 
+3.Ensure that your email address used during registration is used consistently by you as we shall contact you through that email address.                         <br>
+4.You may use the internet during the event.                         <br>
+5.The one team that finishes all questions first shall be declared winner.<br>
+6.Further rules will be given at the time of the event.<br>
+<br>
+<br>
+--&gt; TIPS :<br>
+1.There will be questions in form of the images, which you will have to decode what it says or represents. To do this you collectively need to apply your general knowledge and skills of “connected thinking”.<br>
+2.You need to acknowledge and retrieve your great knowledge of google search and google image search.<br></p>
+</div>
+</div>
+<div class="main-content">
+	<div class="sap_tabs">	
+		 
+		<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+		 
+			  <ul>
+			  	  <li class="resp-tab-item resp-tab-active" aria-controls="tab_item-0" role="tab"><span>Sign up</span></li>
+				  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Sign in</span></li>
+				  
+			  </ul>		
+			  <!---->
+
+			<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>Sign up</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+				<div class="facts">
+					<!--login1-->
+					<div class="register">
+						<form action="http://localhost/web/index.php" method="POST" name="registration">	
+							<input placeholder="Participant1" type="text" name="p1">
+							<input placeholder="Participant2" type="text" name="p2">
+							<input placeholder="Email Address" type="text" name="email">
+							<input placeholder="Mobile No." type="text" name="mno" id="mno">
+							<input placeholder="College" type="text" name="college">
+							<input placeholder="Password" type="password" name="password">	
+							<input placeholder="Confirm Password" type="password" name="cpassword">
+								<div class="sign-up">
+									<input type="submit" value="Create Account" name="cracc" onclick="validation();">
+								</div>
+						</form>
+					</div>
+				</div>
+			</div>	
+
+			<h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>Sign in</h2><div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
+				<div class="facts">
+					<div class="register">
+						<form action="http://localhost/web/index.php" method="POST">										
+							<input placeholder="Email Address" class="mail" type="text">									
+							<input placeholder="Password" class="lock" type="password">										
+							<div class="sign-up">
+								<input type="submit" value="Sign in">
+							</div>
+						</form>
+						<h3><a href="http://localhost/web/index.php#"> Forgot Password</a></h3>
+					</div>
+				</div> 
+			</div> 			        					            	      
+			 	
+		</div>	
+		
+	</div>
+</div>
+ 
+
+
+<script type="text/javascript">
+function validation(){
+
+	//for registration form 
+	var i=0;
+	var error[];
+	var name_1 = document.registration.p1;
+	var name_2 = document.registration.p2;
+	var email = document.registration.email;
+	var mobile = document.getElementsById('mno');
+	var college = document.registration.college;
+	var password = document.registration.password;
+	var password2 = document.registration.cpassword;
+	window.alert("mbn wrong");
+	if(mobile.length() != 10 ){
+		error[i] = "Enter Mobile No. without including +91 or 0<br>";
+		
+		i++;		
+		return false;
+	}
+		
+	if(password != password2){
+		error[i]	= "Passwords does not match<br>";
+		i++;
+		return false;
+		
+	}
+	
+}
+</script><br>
+<b>Warning</b>:  require(function.php): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\web\index.php</b> on line <b>12</b><br>
+<br>
+<b>Fatal error</b>:  require(): Failed opening required 'function.php' (include_path='C:\xampp\php\PEAR') in <b>C:\xampp\htdocs\web\index.php</b> on line <b>12</b><br>
+</body></html>

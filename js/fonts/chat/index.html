@@ -1,0 +1,213 @@
+
+<html>
+
+<style type="text/css">
+
+html { 
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+<body class="bg">
+    <div id="chatbox"  style= "text-align:left;margin:0 auto;margin-bottom:25px;padding:10px;background:#fff;height:818px;width:611px;border:5px solid #37637d;font: 17px arial, sans-serif;
+    overflow:auto">
+    <div style="margin:0 auto;margin-bottom:25px;padding:10px;background:#fff;height:10px;width:611px;border:5px;background: #57b0bb font: 17px arial;font-weight: bold" >:) HINTS AND NOTIFICATION</div>
+    <p1 id="c1"></p1>
+    <br>
+    <p2 id="c2"></p2>
+       <br>
+    <p3 id="c3"> </p3>
+       <br>
+    <p4 id="c4"></p4>
+       <br>
+    <p5 id="c5"></p5>
+       <br>
+    <p6 id="c6"></p6> 
+       <br>
+    <p7 id="c7"></p7>
+       <br>
+    <p8 id="c8"></p8>
+       <br>
+    <p9 id="c9"></p9>
+       <br>
+    <p10 id="c10"></p10>
+       <br>
+    <p11 id="c11"></p11>
+       <br>
+    <p12 id="c12"></p12>
+       <br>
+    <p13 id="c13"></p13>
+       <br>
+    <p14 id="c14"></p14>
+       <br>
+    <p15 id="c15"></p15>
+       <br>
+    <p16 id="c16"></p16>
+       <br>
+    <p17 id="c17"></p17>
+       <br>
+    <p18 id="c18"></p18>
+       <br>
+    <p19 id="c19"></p19>
+       <br>
+    <p20 id="c20"></p20>
+       <br>
+    <p21 id="c21"></p21>   <br>
+    <p22 id="c22"></p22>   <br>
+    <p23 id="c23"></p23>   <br>
+    <p24 id="c24"></p24>   <br>
+    <p25 id="c25"></p25>   <br>
+    <p26 id="c26"></p26>   <br>
+    <p27 id="c27"></p27>   <br>
+    <p28 id="c28"></p28>   <br>
+    <p29 id="c29"></p29>   <br>
+    <p30 id="c30"></p30>   <br>
+    <p31 id="c31"></p31>   <br>
+    <p32 id="c32"></p32>   <br>
+    <p33 id="c33"></p33>   <br>
+    <p34 id="c34"></p34>   <br>
+    <p35 id="c35"></p35>   <br>
+    <p36 id="c36"></p36>   <br> 
+    <p37 id="c37"></p37>   <br>
+    <p38 id="c38"></p38>   <br>
+    <p39 id="c39"></p39>   <br>
+    <p40 id="c40"></p40>   <br>
+    </div> 
+
+<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+
+ <script type="text/javascript">
+ // Set the configuration for your app
+  // TODO: Replace with your project's config object
+  var config = {
+  apiKey: "AIzaSyBrquVCKUhSM6EUma-9NiLGxG4XRHPQ8tI",
+    authDomain: "googlock-db853.firebaseapp.com",
+    databaseURL: "https://googlock-db853.firebaseio.com",
+    storageBucket: "googlock-db853.appspot.com",
+    messagingSenderId: "836000311123"
+  };
+  firebase.initializeApp(config);
+
+  // Get a reference to the database service
+  // var database = firebase.database();
+
+var ref = firebase.database().ref();
+
+ref.on("value", function(snapshot) {
+   // console.log(snapshot.val());
+
+   var data = snapshot.val();
+   // <div >
+   document.getElementById('c1').innerHTML=data.que.h1 ;
+   document.getElementById('c2').innerHTML=data.que.h2 ;
+   document.getElementById('c3').innerHTML=data.que.h3 ;
+   document.getElementById('c4').innerHTML=data.que.h4 ;
+   document.getElementById('c5').innerHTML=data.que.h5 ;
+   document.getElementById('c6').innerHTML=data.que.h6 ;
+   document.getElementById('c7').innerHTML=data.que.h7 ;
+   document.getElementById('c8').innerHTML=data.que.h8 ;
+   document.getElementById('c9').innerHTML=data.que.h9 ;
+   document.getElementById('c10').innerHTML=data.que.h10 ;
+   document.getElementById('c11').innerHTML=data.que.h11 ;
+   document.getElementById('c12').innerHTML=data.que.h12 ;
+   document.getElementById('c13').innerHTML=data.que.h13 ;
+   document.getElementById('c14').innerHTML=data.que.h14 ;
+   document.getElementById('c15').innerHTML=data.que.h15 ;
+   document.getElementById('c16').innerHTML=data.que.h16 ;
+   document.getElementById('c17').innerHTML=data.que.h17 ;
+   document.getElementById('c18').innerHTML=data.que.h18 ;
+   document.getElementById('c19').innerHTML=data.que.h19 ;
+   document.getElementById('c20').innerHTML=data.que.h20 ;
+   document.getElementById('c21').innerHTML=data.que.h21 ;
+   document.getElementById('c22').innerHTML=data.que.h22 ;
+   document.getElementById('c23').innerHTML=data.que.h23 ;
+   document.getElementById('c24').innerHTML=data.que.h24 ;
+   document.getElementById('c25').innerHTML=data.que.h25 ;
+   document.getElementById('c26').innerHTML=data.que.h26 ;
+   document.getElementById('c27').innerHTML=data.que.h27 ;
+   document.getElementById('c28').innerHTML=data.que.h28 ;
+   document.getElementById('c29').innerHTML=data.que.h29 ;
+   document.getElementById('c30').innerHTML=data.que.h30 ;
+     document.getElementById('c31').innerHTML=data.que.h31 ;
+     document.getElementById('c32').innerHTML=data.que.h32 ;
+     document.getElementById('c33').innerHTML=data.que.h33 ;
+     document.getElementById('c34').innerHTML=data.que.h34 ;
+      document.getElementById('c35').innerHTML=data.que.h35 ;
+      document.getElementById('c36').innerHTML=data.que.h36 ;
+      document.getElementById('c37').innerHTML=data.que.h37 ;
+      document.getElementById('c38').innerHTML=data.que.h38 ;
+      document.getElementById('c39').innerHTML=data.que.h39 ;
+      document.getElementById('c40').innerHTML=data.que.h40 ;   
+//document.write("<div id="chatbox" style= "text-align:left;margin:0 auto;margin-bottom:25px;padding:10px;background:#fff;height:270px;width:430px;overflow:auto">");
+   // document.write(data.que.h1);
+   // document.write("<br>");
+   // document.write(data.que.h2);
+   // document.write("<br>");
+   // document.write(data.que.h3);
+   // document.write("<br>");
+   // document.write(data.que.h4);
+   // document.write("<br>");
+   // document.write(data.que.h5);
+   // document.write("<br>");
+   // document.write(data.que.h6);
+   // document.write("<br>");
+   // document.write(data.que.h7);
+   // document.write("<br>");
+   // document.write(data.que.h8);
+   // document.write("<br>");
+   // document.write(data.que.h9);
+   // document.write("<br>");
+   // document.write(data.que.h10);
+   // document.write("<br>");
+   // document.write(data.que.h11);
+   // document.write("<br>");
+   // document.write(data.que.h12);
+   // document.write("<br>");
+   // document.write(data.que.h13);
+   // document.write("<br>");
+   // document.write(data.que.h14);
+   // document.write("<br>");
+   // document.write(data.que.h15);
+   // document.write("<br>");
+   // document.write(data.que.h16);
+   // document.write("<br>");
+   // document.write(data.que.h17);
+   // document.write("<br>");
+   // document.write(data.que.h18);
+   // document.write("<br>");
+   // document.write(data.que.h19);
+   // document.write("<br>");
+   // document.write(data.que.h20);
+   // document.write("<br>");
+   // document.write("</div>");
+
+   // document.write(data.que.h2);
+   // document.write(data.que.h3);
+
+}, function (error) {
+   console.log("Error: " + error.code);
+});
+
+  </script>
+
+
+  <script>
+window.onbeforeunload = function (e) {
+e = e || window.event;
+
+// For IE and Firefox prior to version 4
+if (e) {
+    e.returnValue = 'Sure?';
+}
+
+// For Safari
+return 'Sure?';
+};
+</script>
+
+
+</body>
+</html>
